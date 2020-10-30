@@ -7,8 +7,6 @@
 # @Time    : 2020/10/30
 # @Author  : Lart Pang
 # @Email   : lartpang@163.com
-# @File    : test.py.py
-# @Project : CODProj
 # @GitHub  : https://github.com/lartpang
 
 # 参考https://zhuanlan.zhihu.com/p/75054200
