@@ -1,3 +1,9 @@
+# 验证torch.distributed.barrier的效果
+
+最终可以发现，对于每个不同的进程，barrier的作用就是：
+**所有进程必须执行都按照对应次序来执行`dist.barrier`后（位置可以不同，但是必须要有，不然会最终陷入等待），才会继续执行之后的动作**。
+
+```python
 # -*- coding: utf-8 -*-
 # @Time    : 2021/1/6
 # @Author  : Lart Pang
@@ -65,3 +71,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
